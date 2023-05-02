@@ -1,0 +1,17 @@
+//This file is only documentation purpose
+if exists (select * from sysusers where name='07718158D19D4f5f9D23B55DBF5DF1')
+begin
+       GRANT EXECUTE on xSPFraccionArancelaria_All to [07718158D19D4f5f9D23B55DBF5DF1]
+end
+if exists (select * from sysusers where name='E8F575915A2E4897A517779C0DD7CE')
+begin
+       GRANT EXECUTE on xSPFraccionArancelaria_All to [E8F575915A2E4897A517779C0DD7CE]
+end
+if exists (select * from sysusers where name='MSDSL')
+begin
+       GRANT CONTROL on xSPFraccionArancelaria_All to [MSDSL]
+End
+if exists (select * from sysusers where name='TrustedWebService')
+begin
+       GRANT EXECUTE on xSPFraccionArancelaria_All to [TrustedWebService]
+End
